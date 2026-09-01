@@ -15,6 +15,15 @@ brew tap kloudsec-io/tap
 brew install kloudsec
 ```
 
+On newer Homebrew versions, installing from a tap for the first time asks you to trust it:
+
+```
+Error: Refusing to load formula kloudsec-io/tap/kloudsec from untrusted tap kloudsec-io/tap.
+Run `brew trust --formula kloudsec-io/tap/kloudsec` or `brew trust kloudsec-io/tap` to trust it.
+```
+
+Run `brew trust kloudsec-io/tap`, then `brew install kloudsec` again.
+
 ## What you get
 
 `kloudsec` is the command line client for KloudSec, a cloud security platform covering CSPM, SAST, infrastructure-as-code scanning, secrets scanning, and compliance automation. From the terminal you can kick off scans, pull findings, manage exceptions, and check compliance status against your cloud environment without switching to a browser.
